@@ -19,7 +19,7 @@ if [ ! -f "package-lock.json" ]
 then
     cd $WORKSPACE_DIRECTORY_PATH
     echo "Configuring git"
-    git config user.email 'eagle@levvel.io'
+    git config user.email 'eagle@endava.com'
     git config user.name  'Eagle'
     echo "Creating $PARAM_APP_NAME"
     ng new $PARAM_APP_NAME --defaults -g --directory .
