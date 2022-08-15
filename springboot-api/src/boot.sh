@@ -17,6 +17,9 @@ url="https://start.spring.io/starter.zip?type=gradle-project&language=java&bootV
 curl -o /home/eagle/project.zip $url
 unzip /home/eagle/project.zip
 rm /home/eagle/project.zip
+
+# Whatever futzing with the spring initializer can happen here
+
 git config --global user.email 'eagle@endava.com'
 git config --global user.name  'Eagle'
 git config --global init.defaultBranch main
