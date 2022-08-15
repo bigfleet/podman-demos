@@ -12,7 +12,14 @@ fi
 
 pkgs=$(IFS=, ; echo "${defaultPackages[*]}")
 
-url="https://start.spring.io/starter.zip?type=gradle-project&baseDir=init&language=java&bootVersion=$PARAM_SPRINGBOOT_VERSION&groupId=$pkg&artifactId=$name&name=$name&description=Demo%20project%20for%20$name&packageName=$pkg.$name&packaging=jar&javaVersion=$PARAM_JAVA_VERSION&dependencies=$pkgs"
-`curl -o /home/eagle/project.zip $url`
-#unzip /home/eagle/project.zip
-#rm /home/eagle/project.zip
+url="https://start.spring.io/starter.zip?type=gradle-project&language=java&bootVersion=$PARAM_SPRINGBOOT_VERSION&groupId=$pkg&artifactId=$name&name=$name&description=Demo%20project%20for%20$name&packageName=$pkg.$name&packaging=jar&javaVersion=$PARAM_JAVA_VERSION&dependencies=$pkgs"
+
+curl -o /home/eagle/project.zip $url
+unzip /home/eagle/project.zip
+rm /home/eagle/project.zip
+git config --global user.email 'eagle@endava.com'
+git config --global user.name  'Eagle'
+git config --global init.defaultBranch main
+git init
+git add .
+git commit -m "Initial commit"
