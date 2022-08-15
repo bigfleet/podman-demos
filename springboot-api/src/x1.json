@@ -1,0 +1,9 @@
+{
+  "name": "zimcore",
+  "type": "springboot-api",
+  "services": [
+    "mongodb",
+    "rabbitmq"
+  ],
+  "public": false
+}
