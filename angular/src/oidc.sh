@@ -18,6 +18,8 @@ fi
 if [ ! -f "package-lock.json" ]
 then
     cd $WORKSPACE_DIRECTORY_PATH
+    
+    ng analytics disable
     echo "Configuring git"
     git config user.email 'eagle@endava.com'
     git config user.name  'Eagle'
@@ -45,7 +47,6 @@ then
     git add .
     git commit -am "OIDC configuration injected"
     echo "Building"
-    ng analytics disable
     npm run build
     git add .
     git commit -am "NPM buildable"
