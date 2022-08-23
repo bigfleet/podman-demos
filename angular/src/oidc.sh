@@ -34,7 +34,7 @@ then
     git add .
     git commit -am "Adding jest and test reporters"
     echo "Copying example modules"
-    cp -r /home/eagle/msal/samples/msal-angular-v2-samples/angular14-rxjs7-sample-app/src/app/* ./src/app/.
+    cp -r "${PARAM_USER_HOME}"/msal/samples/msal-angular-v2-samples/angular14-rxjs7-sample-app/src/app/* ./src/app/.
     git add .
     git commit -am "Copied example modules"
     echo "Injecting OIDC configuration"
