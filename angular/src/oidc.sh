@@ -48,6 +48,4 @@ then
     git commit -am "OIDC configuration injected"
     echo "Building"
     npm run build
-    git add .
-    git commit -am "NPM buildable"
 fi
