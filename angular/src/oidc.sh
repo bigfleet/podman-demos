@@ -51,8 +51,3 @@ then
     git add .
     git commit -am "NPM buildable"
 fi
-
-EXIT_CODE="$?"
-if [ "${EXIT_CODE}" != 0 ] ; then
-    exit "${EXIT_CODE}"
-fi
